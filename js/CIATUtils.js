@@ -52,7 +52,7 @@ function CATUtils(){
     //#region start
 
     this.start = function(strAppId, strAppKey){
-        if(!mic_pressed){
+        //if(!mic_pressed){
             var ssb_param = {
                 "grammar_list": null,
                 "params": "appid=581dcc9a,appidkey=5fd627de2b35a6fe, lang = sms, acous = anhui, aue=speex-wb;-1, usr = mkchen, ssm = 1, sub = iat, net_type = wifi, rse = utf8, ent =sms16k, rst = plain, auf  = audio/L16;rate=16000, vad_enable = 1, vad_timeout = 5000, vad_speech_tail = 500, compress = igzip"
@@ -64,10 +64,10 @@ function CATUtils(){
 //                    "lang = sms, acous = anhui, aue=speex-wb;-1, usr = mkchen, ssm = 1, sub = iat, net_type = wifi, rse = utf8, ent =sms16k, rst = plain, auf  = audio/L16;rate=16000, vad_enable = 1, vad_timeout = 5000, vad_speech_tail = 500, compress = igzip"};
             this.session.start(ssb_param);
             mic_pressed = true;
-        }
-        else{
-            this.session.stop();
-        }
+//        }
+//        else{
+//            this.session.stop();
+//        }
     };
 
     //#endregion
